@@ -1,6 +1,7 @@
 package config
 
 import (
+	"final-project-prakerja/models"
 	"fmt"
 	"os"
 
@@ -47,4 +48,9 @@ func InitDatabase() {
 	if err != nil {
 		panic(err)
 	}
+	InitialMmigrate()
+}
+
+func InitialMmigrate()  {
+	DB.AutoMigrate(&models.User{})
 }
