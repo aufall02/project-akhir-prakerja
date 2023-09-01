@@ -2,3 +2,4 @@
 .bat
 .gitignore
 /docs
+app.env
