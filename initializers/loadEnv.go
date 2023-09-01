@@ -1,6 +1,7 @@
 package initializers
 
 import (
+	"errors"
 	"os"
 )
 
@@ -14,7 +15,7 @@ type Config struct {
 	port_server string
 }
 
-func LoadEnv() Config {
+func LoadEnv() (Config,error) {
 	config := Config{
 		username:    os.Getenv("DB_USERNAME"),
 		password:    os.Getenv("DB_PASSWORD"),
@@ -25,5 +26,10 @@ func LoadEnv() Config {
 		port_server: os.Getenv("SERVER_PORT"),
 	}
 
-	return config
+	if config.name == ""  {
+		return config, errors.New("host not found")
+	} 
+
+
+	return config, nil
 }
