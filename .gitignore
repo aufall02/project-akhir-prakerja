@@ -3,3 +3,4 @@
 .gitignore
 /docs
 app.env
+test.**.go
