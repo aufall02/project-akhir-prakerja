@@ -17,5 +17,5 @@ func NewRouteUserController(userController controllers.UserController) UserRoute
 
 func (uc *UserRouteController) UserRoute(e echo.Group){
 	router := e.Group("/users", midleware.DeserializeUser)
-	router.GET("/usercurrent", uc.userController.GetCurrent)
+	router.GET("/current", uc.userController.GetCurrent)
 }
