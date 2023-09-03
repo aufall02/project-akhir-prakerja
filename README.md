@@ -1,5 +1,94 @@
 # project akhir prakerja
 
+## User Api Spec
+
+### Register User Api
+ Endpoint : POST /api/
+
+ Request Body :
+ ```json
+{
+ 
+}
+```
+ Response Body Success :
+```json
+{
+ 
+}
+```
+ Response Body Errors :
+ ```json
+{
+ 
+}
+```
+
+### Login User Api
+ Endpoint : POST /api/
+
+ Request Body :
+ ```json
+{
+ 
+}
+```
+ Response Body Success :
+```json
+{
+ 
+}
+```
+ Response Body Errors :
+ ```json
+{
+ 
+}
+```
+### Get User Api
+ Endpoint : POST /api/
+
+ Request Body :
+ ```json
+{
+ 
+}
+```
+ Response Body Success :
+```json
+{
+ 
+}
+```
+ Response Body Errors :
+ ```json
+{
+ 
+}
+```
+### Logout User Api
+ Endpoint : POST /api/
+
+ Request Body :
+ ```json
+{
+ 
+}
+```
+ Response Body Success :
+```json
+{
+ 
+}
+```
+ Response Body Errors :
+ ```json
+{
+ 
+}
+```
+### Fefresh Token User Api
+ 
 
 
 ## referensi
