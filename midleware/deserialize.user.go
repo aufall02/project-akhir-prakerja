@@ -25,7 +25,7 @@ func DeserializeUser(next echo.HandlerFunc) echo.HandlerFunc {
 		} else if err == nil {
 			access_token = cookie.Value
 		}
-		fmt.Println(access_token)
+		// fmt.Println(access_token)
 		if access_token == "" {
 			return c.JSON(http.StatusUnauthorized, "not logged in")
 		}
