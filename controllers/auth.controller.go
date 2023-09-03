@@ -210,5 +210,5 @@ func (ac *AuthController) LogoutUser(c echo.Context) error {
 	c.SetCookie(&http.Cookie{Name: "refresh_token", Value: ""})
 	c.SetCookie(&http.Cookie{Name: "logged_in", Value: ""})
 
-	return c.JSON(http.StatusOK, "success")
+	return c.JSON(http.StatusOK, "success logout")
 }
