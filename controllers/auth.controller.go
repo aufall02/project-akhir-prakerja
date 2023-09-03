@@ -55,7 +55,7 @@ func (ac *AuthController) RegisterUser(c echo.Context) error {
 	result := ac.DB.Create(&newUser)
 
 	if result.Error != nil && strings.Contains(result.Error.Error(), "duplicate key value violates unique") {
-		return echo.NewHTTPError(http.StatusConflict, "User with that email already exists")
+		return echo.NewHTTPError(http.StatusConflict, "User with that ID already exists")
 	} else if result.Error != nil {
 		return echo.NewHTTPError(http.StatusBadGateway, "Something bad happened")
 	}
